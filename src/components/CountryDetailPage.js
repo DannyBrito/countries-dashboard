@@ -17,7 +17,7 @@ const CountryDetailPage = ({dataFetched,history, changeDetailPage,borderCountrie
     return name ? (
         <div className="main-container country-detail-container">
             <div className="controllers-box">
-                <button className="back-button">Back </button>
+                <button onClick={()=>history.goBack()} className="back-button">Back </button>
             </div>
             
             <div className="detail-container">
