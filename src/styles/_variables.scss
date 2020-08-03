@@ -12,3 +12,15 @@ $light-input: hsl(0, 0%, 52%);
 $light-background: hsl(0, 0%, 98%);
 // White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%)
 $darktext-lightelements: hsl(0, 0%, 100%);
+
+
+// others
+
+$shadow-basic: -0 0 10px 5px rgb(226, 226, 226);
+$shadow-card: -3px 3px 67px -16px rgb(38, 38, 38);
+
+@mixin show-box($shadow-option) {
+    -webkit-box-shadow:$shadow-option;
+    -moz-box-shadow:$shadow-option;
+    box-shadow: $shadow-option;
+}

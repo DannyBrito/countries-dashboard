@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react'
 
 import uuid from 'react-uuid'
-const CountryDetailPage = ({dataFetched,history, changeDetailPage,borderCountries, flag,name,nativeName,population,region,subregion,capital,topLevelDomain,currencies,languages,borders}) =>{
+import { srcSelectorByTheme } from '../constants/constants'
+const CountryDetailPage = ({lightTheme,dataFetched,history, changeDetailPage,borderCountries, flag,name,nativeName,population,region,subregion,capital,topLevelDomain,currencies,languages,borders}) =>{
 
     const formatDetail = (data = []) =>{
         if(typeof data[0] !== 'object') return data.join(' ,')
@@ -17,7 +18,9 @@ const CountryDetailPage = ({dataFetched,history, changeDetailPage,borderCountrie
     return name ? (
         <div className="main-container country-detail-container">
             <div className="controllers-box">
-                <button onClick={()=>history.goBack()} className="back-button">Back </button>
+                <button onClick={()=>history.goBack()} className="back-button">
+                    <img className="icon" src={srcSelectorByTheme(lightTheme,'arrow')}/>Back 
+                </button>
             </div>
             
             <div className="detail-container">
@@ -41,7 +44,7 @@ const CountryDetailPage = ({dataFetched,history, changeDetailPage,borderCountrie
                         <p>Languages: <span>{formatDetail(languages)}</span></p>
                     </div>
                     <div className="borders-container">
-                        <div>Border Countries:</div>
+                        <div className="title"> Border Countries:</div>
                         <div className="border-cards">
                             {borderCountries(borders).map(country =>
                                 <div onClick={() => changeDetailPage(country.alpha3Code)} key={uuid()} className="border-card"> {country.name} </div>)}

@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+@import './_variables.scss';
 @import './c_navbar.scss';
 @import './c_homepage.scss';
 @import './c_country_card_container.scss';
+@import './detailpage.scss';
 
 [data-theme="dark"]{
 }

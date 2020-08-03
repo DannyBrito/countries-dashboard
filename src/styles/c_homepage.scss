@@ -7,6 +7,7 @@
         flex-direction: column;
         height: 100px;
         .search-box{
+            border-radius: 8px;
             display: flex;
             height: 40px;
             margin: 10px 0;
@@ -25,16 +26,14 @@
                 align-items: center;
                 input{
                     width: 100%;
+                    padding-right:7px;
                     border: none;
                 }
                 input:focus{
                     outline: none;
                 }
             }
-
-            -webkit-box-shadow:-3px 3px 67px -16px rgb(38, 38, 38);
-            -moz-box-shadow:-3px 3px 67px -16px rgb(38, 38, 38);
-            box-shadow: -3px 3px 67px -16px rgb(38, 38, 38);
+            @include show-box($shadow-basic)
         }
         .filter-box{
             select{

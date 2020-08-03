@@ -1,6 +1,6 @@
 .nav-bar{
+    @include show-box($shadow-basic);
     padding: 0 10px;
-    background-color: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,6 +18,7 @@
 
     .theme-box{
         display: flex;
+        font-weight: 600;
         align-items: center;
     }
 }

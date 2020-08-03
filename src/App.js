@@ -40,7 +40,7 @@ const App = () => {
     <div data-theme="dark" className="App">
       <NavBar lightTheme={lightTheme} />
       <Switch>
-        <Route path={`/:countryCode`} render={({match,history})=><CountryDetailPage changeDetailPage={changeDetailPage} borderCountries={borderCountries} dataFetched={Object.keys(countries).length !== 0} history={history} {...countries[match.params.countryCode.toUpperCase()]} />} />
+        <Route path={`/:countryCode`} render={({match,history})=><CountryDetailPage  lightTheme={lightTheme} changeDetailPage={changeDetailPage} borderCountries={borderCountries} dataFetched={Object.keys(countries).length !== 0} history={history} {...countries[match.params.countryCode.toUpperCase()]} />} />
         <Route exact path="/" render={(routerProps)=> <HomePage lightTheme={lightTheme} changeDetailPage={changeDetailPage} countries={Object.values(countries)} /> }/>
       </Switch>
 
