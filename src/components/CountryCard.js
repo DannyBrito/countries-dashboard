@@ -9,14 +9,16 @@ const CountryCard = ({changeDetailPage,alpha3Code,name,population,region,capital
             </div>
             <div className="detail-container">
                 <div className="country-name">{name}</div>
-                <div className="subtext population-info">
-                    Population: <span>{numberFormater(population)}</span>
-                </div>
-                <div className="subtext region-info">
-                    Region: <span>{region}</span>
-                </div>
-                <div className="subtext capital-info">
-                    Capital: <span>{capital}</span>
+                <div className="info-box">
+                    <div className="subtext population-info">
+                        Population: <span>{numberFormater(population)}</span>
+                    </div>
+                    <div className="subtext region-info">
+                        Region: <span>{region}</span>
+                    </div>
+                    <div className="subtext capital-info">
+                        Capital: <span>{capital}</span>
+                    </div>
                 </div>
             </div>
         </div>

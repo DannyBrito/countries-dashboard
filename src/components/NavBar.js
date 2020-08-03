@@ -12,7 +12,7 @@ const NavBar = ({lightTheme}) =>{
                 Where in the world?
             </div>
             <div className="theme-box">
-                <img alt="" src={srcSelectorByTheme(lightTheme,'mode')}/> 
+                <img className="icon" alt="" src={srcSelectorByTheme(lightTheme,'mode')}/> 
                 Dark Mode
             </div>
         </div>

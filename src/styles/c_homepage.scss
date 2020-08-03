@@ -1,0 +1,45 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    
+    .controllers-box{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        .search-box{
+            display: flex;
+            height: 40px;
+            margin: 10px 0;
+            .search-icon-box{
+                display: flex;
+                align-items: center;
+                max-width: 30px;
+                img{
+                    height: 40%;
+                    width: 100%;
+                }
+            }
+            .input-box{
+                flex:1;
+                display: flex;
+                align-items: center;
+                input{
+                    width: 100%;
+                    border: none;
+                }
+                input:focus{
+                    outline: none;
+                }
+            }
+
+            -webkit-box-shadow:-3px 3px 67px -16px rgb(38, 38, 38);
+            -moz-box-shadow:-3px 3px 67px -16px rgb(38, 38, 38);
+            box-shadow: -3px 3px 67px -16px rgb(38, 38, 38);
+        }
+        .filter-box{
+            select{
+                // display: none;
+            }
+        }
+    }
+}

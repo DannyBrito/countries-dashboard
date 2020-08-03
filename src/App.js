@@ -37,7 +37,7 @@ const App = () => {
   }
 
   return (
-    <div className="App">
+    <div data-theme="dark" className="App">
       <NavBar lightTheme={lightTheme} />
       <Switch>
         <Route path={`/:countryCode`} render={({match,history})=><CountryDetailPage changeDetailPage={changeDetailPage} borderCountries={borderCountries} dataFetched={Object.keys(countries).length !== 0} history={history} {...countries[match.params.countryCode.toUpperCase()]} />} />

@@ -30,11 +30,13 @@ const HomePage = ({changeDetailPage,countries , lightTheme}) =>{
             <div className="controllers-box">
                 <div className="search-box">
                     <div className="search-icon-box">
-                        <img alt="" src={srcSelectorByTheme(lightTheme,'search')}/>
-                        <input placeholder="Search for a country..." type="text" onChange={e => setQuery(e.target.value)} value={query}/>
+                        <img alt="" className="icon" src={srcSelectorByTheme(lightTheme,'search')}/>
+                    </div>
+                    <div className="input-box">
+                    <input placeholder="Search for a country..." type="text" onChange={e => setQuery(e.target.value)} value={query}/>
                     </div>
                 </div>
-                <div className="filterBox">
+                <div className="filter-box">
                     <label htmlFor="filter-region"/>
                     <select onChange={(e)=>setFilterRegion(e.target.value)} name="filer-region">
                         {generateFilterOptions()}

@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+@import './c_navbar.scss';
+@import './c_homepage.scss';
+@import './c_country_card_container.scss';
+
+[data-theme="dark"]{
+}
+[data-theme="light"]{
+}
 
 *{
     box-sizing: border-box;
@@ -7,4 +15,22 @@
     font-family: 'Nunito Sans', sans-serif;
     font-size: 14px;
 }
+
+html, body, #root{
+
+}
+
+img {
+    width: 150px;
+}
+
+.icon{
+    width: 35px;
+    height: 35px;
+}
+
+.main-container{
+    padding: 10px;
+}
+
 

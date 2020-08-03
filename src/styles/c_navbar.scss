@@ -1,0 +1,23 @@
+.nav-bar{
+    padding: 0 10px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+
+    .title-page{
+        font-weight: 800;
+    }
+
+    img{
+        height: 15px;
+        width: auto;
+        margin-right: 5px;
+    }
+
+    .theme-box{
+        display: flex;
+        align-items: center;
+    }
+}
