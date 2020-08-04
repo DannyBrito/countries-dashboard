@@ -7,10 +7,17 @@
         flex-direction: column;
         height: 100px;
         .search-box{
+            background-color: var(--card-bg-color);
             border-radius: 8px;
             display: flex;
             height: 40px;
             margin: 10px 0;
+            
+            div, img, input{
+                transition: none;
+                background-color: inherit;
+            }
+
             .search-icon-box{
                 display: flex;
                 align-items: center;
@@ -25,6 +32,7 @@
                 display: flex;
                 align-items: center;
                 input{
+                    color: var(--input-color);
                     width: 100%;
                     padding-right:7px;
                     border: none;
@@ -33,18 +41,18 @@
                     outline: none;
                 }
             }
-            @include show-box($shadow-basic)
+            @include show-box(var(--shadow-basic));
         }
         .filter-box{
             select{
-                // display: none;
+                transition: none;
             }
         }
     }
 }
 
 @media only screen and (min-width:$table){
-    
+
     .home-container{
         .controllers-box{
             // background-color: red;

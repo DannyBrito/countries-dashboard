@@ -14,12 +14,12 @@ div.country-detail-container{
         .back-button{
             border-radius: 3px;
             font-size: 14px;
-            @include show-box($shadow-basic);
+            @include show-box(var(--shadow-basic));
             height: 100%;
             width: 75px;
             border: none;
             display: flex;
-            background-color: transparent;
+            background-color: --var(--card-bg-color);
             justify-content: center;
             align-items: center;
             .icon{
@@ -68,7 +68,7 @@ div.country-detail-container{
                     margin-bottom: 5px;
                 }
                 .border-card{
-                    @include show-box($shadow-basic);
+                    @include show-box(var(--shadow-basic));
                     font-weight: 300;
                     margin: 2.5px;
                     padding: 0 5px;

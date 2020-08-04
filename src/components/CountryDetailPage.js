@@ -19,7 +19,7 @@ const CountryDetailPage = ({lightTheme,dataFetched,history, changeDetailPage,bor
         <div className="main-container country-detail-container">
             <div className="controllers-box">
                 <button onClick={()=>history.goBack()} className="back-button">
-                    <img className="icon" src={srcSelectorByTheme(lightTheme,'arrow')}/>Back 
+                    <img alt="" className="icon" src={srcSelectorByTheme(lightTheme,'arrow')}/>Back 
                 </button>
             </div>
             

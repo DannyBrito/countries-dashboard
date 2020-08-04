@@ -1,11 +1,10 @@
 .nav-bar{
-    @include show-box($shadow-basic);
+    @include show-box(var(--shadow-basic));
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 75px;
-
     .title-page{
         font-weight: 800;
     }
@@ -19,7 +18,7 @@
     .theme-box{
         display: flex;
         font-weight: 600;
-        align-items: center;
+        align-items: center;        
     }
 }
 
