@@ -42,3 +42,45 @@
         }
     }
 }
+
+@media only screen and (min-width:$table){
+    .country-cards-container{
+        flex-direction: row;
+        padding: 0 2%;
+        justify-content: space-evenly;
+        .country-card{
+            margin-top: 2%;
+            max-width: 46%;
+            width: 46%;
+        }
+    }
+    
+}
+@media only screen and (min-width:$table){
+    .country-cards-container{
+        flex-direction: row;
+        padding: 0 2%;
+        justify-content: space-evenly;
+        .country-card{
+            margin-top: 2%;
+            max-width: 48%;
+            width: 48%;
+        }
+    }
+    
+}
+@media only screen and (min-width:$view-plus){
+    .country-cards-container{
+        // background-color: red;
+        flex-direction: row;
+        padding: 0 2%;
+        justify-content: flex-start;
+        .country-card{
+            margin-top: 2%;
+            max-width: 23%;
+            width: 23%;
+            margin: 2% 1% 0 1%;
+        }
+    }
+    
+}

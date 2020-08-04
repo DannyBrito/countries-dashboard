@@ -42,3 +42,20 @@
         }
     }
 }
+
+@media only screen and (min-width:$table){
+    
+    .home-container{
+        .controllers-box{
+            // background-color: red;
+            padding: 0 3%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        select{
+            // width: 50%;
+            height: 40px;
+            margin: 10px 0;
+        }
+    }
+}

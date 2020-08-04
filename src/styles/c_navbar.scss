@@ -22,3 +22,12 @@
         align-items: center;
     }
 }
+
+@media only screen and (min-width:$table){
+    .nav-bar{
+        padding: 0 calc(3% + 10px);   
+    }
+    .title-page{
+        font-size: 18px;
+    }
+}
