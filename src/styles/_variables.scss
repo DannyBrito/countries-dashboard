@@ -1,0 +1,11 @@
+@mixin show-box($shadow-option) {
+    -webkit-box-shadow:$shadow-option;
+    -moz-box-shadow:$shadow-option;
+    box-shadow: $shadow-option;
+}
+
+$table: 500px;
+$table-mid:750px;
+$view-plus:850px;
+
+

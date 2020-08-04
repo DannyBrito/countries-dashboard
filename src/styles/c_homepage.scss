@@ -1,0 +1,69 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    
+    .controllers-box{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        .search-box{
+            background-color: var(--card-bg-color);
+            border-radius: 8px;
+            display: flex;
+            height: 40px;
+            margin: 10px 0;
+            
+            div, img, input{
+                transition: none;
+                background-color: inherit;
+            }
+
+            .search-icon-box{
+                display: flex;
+                align-items: center;
+                max-width: 30px;
+                img{
+                    height: 40%;
+                    width: 100%;
+                }
+            }
+            .input-box{
+                flex:1;
+                display: flex;
+                align-items: center;
+                input{
+                    color: var(--input-color);
+                    width: 100%;
+                    padding-right:7px;
+                    border: none;
+                }
+                input:focus{
+                    outline: none;
+                }
+            }
+            @include show-box(var(--shadow-basic));
+        }
+        .filter-box{
+            select{
+                transition: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:$table){
+
+    .home-container{
+        .controllers-box{
+            // background-color: red;
+            padding: 0 3%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        select{
+            // width: 50%;
+            height: 40px;
+            margin: 10px 0;
+        }
+    }
+}

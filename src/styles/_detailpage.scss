@@ -1,0 +1,110 @@
+div.country-detail-container{
+    // background-color: red;
+    *{
+        font-size: 16px;
+    }
+    padding: 25px;
+    .controllers-box{
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 30px;
+        .back-button{
+            border-radius: 3px;
+            font-size: 14px;
+            @include show-box(var(--shadow-basic));
+            height: 100%;
+            width: 75px;
+            border: none;
+            display: flex;
+            background-color: --var(--card-bg-color);
+            justify-content: center;
+            align-items: center;
+            .icon{
+                width: 20px;
+                height: 100%;
+            }
+        }
+        .back-button:focus{
+            outline: none;
+        }
+    }
+
+    .detail-container{
+        display: flex;
+        flex-direction: column;
+
+        .flag-box{
+            width: 100%;
+            max-width: 300px;
+            img{
+                width: 100%;
+            }
+        }
+
+        .country-info-box{
+            .country-name{
+                font-weight: 800;
+                font-size: 20px;
+                margin: 10px 0;
+            }
+
+            .info-box{
+                font-weight: 600;
+                span{
+                    font-weight: 300;
+                }
+                padding: 10px 0;
+            }
+            
+            .borders-container{
+                font-weight: 600;
+                display: flex;
+                flex-wrap: wrap;
+                .title{
+                    width: 100%;
+                    margin-bottom: 5px;
+                }
+                .border-card{
+                    @include show-box(var(--shadow-basic));
+                    font-weight: 300;
+                    margin: 2.5px;
+                    padding: 0 5px;
+                    display: inline-block;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:$table-mid){
+    div.country-detail-container{
+        height:calc(100% - 75px);
+        .detail-container{
+            flex-direction: row;
+            .flag-box{
+                img{
+                    height: 100%;
+                    // width: auto;
+                }
+            }
+            .country-info-box{
+                padding: 20px 10px 0 40px;
+                display: flex;
+                flex-wrap: wrap;
+                .country-name{
+                    width: 100%;
+                }
+                .info-box{
+                    width: 50%;
+                }
+            }
+
+        }
+    }
+    
+}

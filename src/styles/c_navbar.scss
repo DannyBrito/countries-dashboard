@@ -1,0 +1,32 @@
+.nav-bar{
+    @include show-box(var(--shadow-basic));
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    .title-page{
+        font-weight: 800;
+    }
+
+    img{
+        height: 15px;
+        width: auto;
+        margin-right: 5px;
+    }
+
+    .theme-box{
+        display: flex;
+        font-weight: 600;
+        align-items: center;        
+    }
+}
+
+@media only screen and (min-width:$table){
+    .nav-bar{
+        padding: 0 calc(3% + 10px);   
+    }
+    .title-page{
+        font-size: 18px;
+    }
+}

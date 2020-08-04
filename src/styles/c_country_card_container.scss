@@ -1,0 +1,93 @@
+.country-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 7%;
+    .country-card{
+        @include show-box(var(--shadow-card));
+        background-color: var(--card-bg-color);
+        width: 100%;
+        max-width: 300px;
+        height: 325px;
+        border-radius: 8px;
+        margin: 20px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        
+        div,span{
+            background-color: inherit;
+        }
+
+        .flag-container-card{
+            border-radius: 8px 8px 0 0;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit:cover;
+            }
+            height: 160px;
+        }
+        .detail-container{
+            border-radius: 8px;
+            flex: 1;
+            padding: 5%;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .country-name{
+                // height: 25%;
+                font-weight: 800;
+            }
+            .info-box{
+                span{
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:$table){
+    .country-cards-container{
+        flex-direction: row;
+        padding: 0 2%;
+        justify-content: space-evenly;
+        .country-card{
+            margin-top: 2%;
+            max-width: 46%;
+            width: 46%;
+        }
+    }
+    
+}
+@media only screen and (min-width:$table){
+    .country-cards-container{
+        flex-direction: row;
+        padding: 0 2%;
+        justify-content: space-evenly;
+        .country-card{
+            margin-top: 2%;
+            max-width: 48%;
+            width: 48%;
+        }
+    }
+    
+}
+@media only screen and (min-width:$view-plus){
+    .country-cards-container{
+        // background-color: red;
+        flex-direction: row;
+        padding: 0 2%;
+        justify-content: flex-start;
+        .country-card{
+            margin-top: 2%;
+            max-width: 23%;
+            width: 23%;
+            margin: 2% 1% 0 1%;
+        }
+    }
+    
+}
